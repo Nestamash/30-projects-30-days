@@ -17,12 +17,12 @@ console.log(keys);
 keys.forEach(key => key.addEventListener('transitioned', removeTransition()));
 
 function removeTransition(e){
-    // console.log(e);
-    // if(e.propertyName !== 'transform'){
-    //     return;
-    // }
-    // else{
-    //     this.classList.remove('playing');
-    // }
+    console.log(e);
+    if(e.propertyName !== 'transform'){
+        return;
+    }
+    else{
+        this.classList.remove('playing');
+    }
     
 }
